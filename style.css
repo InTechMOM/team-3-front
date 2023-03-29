@@ -1,5 +1,16 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 body{
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace;
+    background-image: url(./img/Mesa\ de\ trabajo\ 1.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;  
 }
 
 a{
@@ -40,21 +51,6 @@ nav a:hover{
     nav{
         padding:10px 0px;
     }
-}
-
-
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-
-body{
-    background-image: url(img/Mesa\ de\ trabajo\ 1.png);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment:fixed;  
 }
 
 .form-body {
