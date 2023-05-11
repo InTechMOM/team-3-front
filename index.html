@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EdVisto New</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ingreso - Edvisto</title>
+    <link rel="stylesheet" href="./style/ingreso.css">
 </head>
 <body>
-    <script src="./script.js"></script>
+    <script src="./js/ingreso.js"></script>
     <header>
         <a href="#" class="logo">
-            <img src="img/edvisto-logo.jpg.jpg" alt="Logo">
+            <img src="./img/logo edvisto blanco.png" alt="Logo">
         </a>
-        <nav>
-            <a href="" class="nav-link">Usuario</a>
-            <a href="" class="nav-link">Menú</a>
-        </nav>
     </header>
     <div class="form-body">
-        <form>
-            <input type="url" placeholder="URL">
-            <input type="text" placeholder="Título del video">
-            <input type="text" placeholder="Nombre y apellido del líder">
-            <input type="email" placeholder="E-mail del líder">
-            <input type="itext" placeholder="Descripción">
-            <button>Guardar</button>
+        <p class="text">INGRESA TUS DATOS</p>
+        <form name= formulario onsubmit= "return validateForm()" id="miFormulario">
+            <input type="text" placeholder="E-mail" name="email" id="email">
+            <span id="emailError" class="error"></span>
+            <select name="rol" id="rol">
+                <option value></option>
+                <option value="1">Docente</option> 
+                <option value="2">Estudiante</option>
+            </select>
+            <span id="rolError" class="error"></span>
+            <button type="submit" id="Ingresar">Ingresar</button>
         </form>
     </div>
-        
 </body>
 </html>

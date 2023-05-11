@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación - Edvisto</title>
+    <link rel="stylesheet" href="./style/evaluacion.css">
+</head>
+<body>
+    <script src="./js/evaluacion.js"></script>
+    <header>
+        <a href="#" class="logo">
+            <img src="./img/logo edvisto azul.jpg" alt="Logo">
+        </a>
+        <p class="text">BIENVENIDO DOCENTE</p>
+    </header>
+
+    <div class="marco">
+    <div class="form-body">
+        <form name= "evaluacion" onsubmit="return validateForm();">
+            <div class="selecciona">
+            LISTADO DE VIDEOS
+            <select name="Titulo" id="titulo">
+                <option value></option>
+            </select>
+            <select name="Datos del estudiante" id="DatosEstudiante">
+            </select>
+            <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" readonly>
+            
+        </div>
+
+            <h1>EVALUACIÓN</h1>
+
+    <div class="creatividad-container">    
+            <h2>Creatividad</h2>
+            <div class="rating">
+            <input id="radio1" type="radio" class="estrellas" name="estrellas" value="5">
+            <label for="radio1">★</label>
+            <input id="radio2" type="radio" class="estrellas" name="estrellas" value="4">
+            <label for="radio2">★</label>
+            <input id="radio3" type="radio" class="estrellas" name="estrellas" value="3">
+            <label for="radio3">★</label>
+            <input id="radio4" type="radio" class="estrellas" name="estrellas" value="2">
+            <label for="radio4">★</label>
+            <input id="radio5" type="radio" class="estrellas" name="estrellas" value="1">
+            <label for="radio5">★</label>
+        </div>
+        <input type="text" placeholder="Haz un comentario" name="comentario" id="comentario">
+    </div>
+
+    <div class="recursos-container">
+            <h3>1. Elige los recursos que necesita para llevar al cabo las 
+            actividades que decide realizar.</h3>
+            <div class="rating1">
+                <input id="radio11" type="radio" class="estrellas" name="estrellas1" value="5">
+                <label for="radio11">★</label>
+                <input id="radio21" type="radio" class="estrellas" name="estrellas1" value="4">
+                <label for="radio21">★</label>
+                <input id="radio31" type="radio" class="estrellas" name="estrellas1" value="3">
+                <label for="radio31">★</label>
+                <input id="radio41" type="radio" class="estrellas" name="estrellas1" value="2">
+                <label for="radio41">★</label>
+                <input id="radio51" type="radio" class="estrellas" name="estrellas1" value="1">
+                <label for="radio51">★</label>
+            </div>
+            <input type="text" placeholder="Haz un comentario" name="comentario1" id="comentario">
+    </div>
+
+    <div class="decisiones-container">
+            <h4>2. Persiste en la realización de actividades desafiantes y 
+            toma decisiones para concluirlas.</h4>
+            <div class="rating2">
+                <input id="radio12" type="radio" class="estrellas" name="estrellas2" value="5">
+                <label for="radio12">★</label>
+                <input id="radio22" type="radio" class="estrellas" name="estrellas2" value="4">
+                <label for="radio22">★</label>
+                <input id="radio32" type="radio" class="estrellas" name="estrellas2" value="3">
+                <label for="radio32">★</label>
+                <input id="radio42" type="radio" class="estrellas" name="estrellas2" value="2">
+                <label for="radio42">★</label>
+                <input id="radio52" type="radio" class="estrellas" name="estrellas2" value="1">
+                <label for="radio52">★</label>
+            </div>
+            <input type="text" placeholder="Haz un comentario" name="comentario2" id="comentario">
+    </div>
+
+    <div class="ayuda-container">
+            <h5>3. Reconoce cuando alguien necesita ayuda y la proporciona.</h5>
+            <div class="rating3">
+                <input id="radio13" type="radio" class="estrellas" name="estrellas3" value="5">
+                <label for="radio13">★</label>
+                <input id="radio23" type="radio" class="estrellas" name="estrellas3" value="4">
+                <label for="radio23">★</label>
+                <input id="radio33" type="radio" class="estrellas" name="estrellas3" value="3">
+                <label for="radio33">★</label>
+                <input id="radio43" type="radio" class="estrellas" name="estrellas3" value="2">
+                <label for="radio43">★</label>
+                <input id="radio53" type="radio" class="estrellas" name="estrellas3" value="1">
+                <label for="radio53">★</label>
+            </div>
+            <input type="text" placeholder="Haz un comentario" name="comentario3" id="comentario">
+    </div>
+
+    <div class="seguridad-container">
+            <h6>4. Se expresa con seguridad y defiende sus ideas ante sus compañeros.</h6>
+            <div class="rating4">
+                <input id="radio14" type="radio" class="estrellas" name="estrellas4" value="5">
+                <label for="radio14">★</label>
+                <input id="radio24" type="radio" class="estrellas" name="estrellas4" value="4">
+                <label for="radio24">★</label>
+                <input id="radio34" type="radio" class="estrellas" name="estrellas4" value="3">
+                <label for="radio34">★</label>
+                <input id="radio44" type="radio" class="estrellas" name="estrellas4" value="2">
+                <label for="radio44">★</label>
+                <input id="radio54" type="radio" class="estrellas" name="estrellas4" value="1">
+                <label for="radio54">★</label>
+            </div>
+            <input type="text" placeholder="Haz un comentario" name="comentario4" id="comentario">
+    </div>
+
+    <div class="convivencia-container">
+            <h7>5. Propone acuerdos para la convivencia, el juego o el trabajo, explica su utilidad y actúa con apego a ellos.</h7>
+            <div class="rating5">
+                <input id="radio15" type="radio" class="estrellas" name="estrellas5" value="5">
+                <label for="radio15">★</label>
+                <input id="radio25" type="radio" class="estrellas" name="estrellas5" value="4">
+                <label for="radio25">★</label>
+                <input id="radio35" type="radio" class="estrellas" name="estrellas5" value="3">
+                <label for="radio35">★</label>
+                <input id="radio45" type="radio" class="estrellas" name="estrellas5" value="2">
+                <label for="radio45">★</label>
+                <input id="radio55" type="radio" class="estrellas" name="estrellas5" value="1">
+                <label for="radio55">★</label>
+            </div>
+            <input type="text" placeholder="Haz un comentario" name="comentario5" id="comentario">
+    </div>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
