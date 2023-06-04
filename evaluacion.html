@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluación - Edvisto</title>
     <link rel="stylesheet" href="./style/evaluacion.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </head>
 <body>
-    <script src="./js/evaluacion.js"></script>
+
     <header>
         <a href="#" class="logo">
             <img src="./img/logo edvisto azul.jpg" alt="Logo">
@@ -21,16 +23,19 @@
         <form name= "evaluacion" onsubmit="return validateForm();">
             <div class="selecciona">
             LISTADO DE VIDEOS
-            <select name="Titulo" id="titulo">
+            <select name="Titulo" id="title">
+                <option value=""></option>    
+            </select>
+            <select name="Datos del estudiante" id="studentName">
                 <option value></option>
             </select>
-            <select name="Datos del estudiante" id="DatosEstudiante">
-            </select>
-            <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" readonly>
+              
+            <textarea id="description" name="descripcion" placeholder="Descripción" readOnly></textarea>
             
         </div>
 
             <h1>EVALUACIÓN</h1>
+
 
     <div class="creatividad-container">    
             <h2>Creatividad</h2>
@@ -135,9 +140,15 @@
             </div>
             <input type="text" placeholder="Haz un comentario" name="comentario5" id="comentario">
     </div>
-            <button type="submit">Guardar</button>
+            <button type="submit" id="guardarBtn">Guardar</button>
         </form>
     </div>
 </div>
+
+
+
+
+
+<script src="./js/evaluacion.js"></script>
 </body>
 </html>
